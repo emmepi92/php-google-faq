@@ -10,6 +10,18 @@ h2 {
     margin: 0 auto;
 }
 
-p {
-    margin: 24px 0;
+.answer{
+    margin: 24px 18px;
+}
+
+.accordion {
+    font-size: 30px;
+    padding: 18px;
+    background-color: #ccc;
+    border-bottom: #555 1px solid;
+}
+
+.panel {
+    display: none;
+    overflow: hidden;
 }

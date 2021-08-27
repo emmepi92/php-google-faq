@@ -46,14 +46,18 @@ $faqs = [
 
     <?php
 
-    foreach ($faqs as $faq) {
-        echo "
-        <h2> {$faq['quest']} </h2>
-        {$faq['answer']}";
+    foreach ($faqs as $faq) { ?>
+
+        <div class="accordion"> <?php echo $faq['quest'] ?> </div>
+
+        <div class="answer panel"> <?php echo $faq['answer'] ?></div>
+        <?php
     }
     ?>
 
 </div>
+
+<script src="script.js"></script>
 
 </body>
 </html>
