@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -48,9 +49,14 @@ $faqs = [
 
     foreach ($faqs as $faq) { ?>
 
-        <div class="accordion"> <?php echo $faq['quest'] ?> </div>
+        <div class="accordion"> 
+            <div> <?php echo $faq['quest'] ?></div> 
+            <i class="fas fa-chevron-circle-down"></i> 
+        </div>
 
-        <div class="answer panel"> <?php echo $faq['answer'] ?></div>
+        <div class="answer panel"> 
+            <?php echo $faq['answer'] ?>
+        </div>
         <?php
     }
     ?>

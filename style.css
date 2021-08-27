@@ -19,6 +19,17 @@ h2 {
     padding: 18px;
     background-color: #ccc;
     border-bottom: #555 1px solid;
+    display: flex;
+    align-items: center;
+}
+
+.accordion:hover {
+    background-color: #444;
+    color: white;
+}
+
+.accordion div:first-child {
+    flex-grow: 1;
 }
 
 .panel {
